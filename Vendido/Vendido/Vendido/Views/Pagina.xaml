@@ -7,7 +7,7 @@
              x:Class="Vendido.Views.Pagina">
     <ContentPage.Content>
         <StackLayout Spacing="15" Padding="15" BackgroundColor="RosyBrown">
-            <Entry x:Name="txtnombre" Placeholder="Nombre del producto"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre del producto"/>
             <Entry x:Name="txtPrecio" Placeholder="Precio"/>
             <Entry x:Name="txtCantidad" Placeholder="Cantidad"/>
         </StackLayout>
