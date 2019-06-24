@@ -10,19 +10,19 @@ using Xamarin.Forms.Xaml;
 namespace Vendido.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Pagina : ContentPage
+    public partial class ListaProductos : ContentPage
     {
-        public Pagina()
+        public ListaProductos()
         {
             InitializeComponent();
         }
 
-        private void BtnGuardar_Clicked(object sender, EventArgs e)
+        private void LsvProductos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 
         }
 
-        private void BtnEliminar_Clicked(object sender, EventArgs e)
+        private void BtnNuevo_Clicked(object sender, EventArgs e)
         {
 
         }

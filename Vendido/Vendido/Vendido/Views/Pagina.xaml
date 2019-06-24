@@ -14,7 +14,7 @@
     </ContentPage.Content>
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="btnGuardar" Text="Guardar" Priority="0"
-                     Clicked="BtnEliminar_Clicked" Order="Primary" IconImageSource="guardar.png"/>
+                     Clicked="BtnGuardar_Clicked" Order="Primary" IconImageSource="guardar.png"/>
         <ToolbarItem x:Name="btnEliminar" Text="Eliminar" Priority="1"
                      Clicked="BtnEliminar_Clicked" Order="Primary" IconImageSource="eliminar.png"/>
     </ContentPage.ToolbarItems>

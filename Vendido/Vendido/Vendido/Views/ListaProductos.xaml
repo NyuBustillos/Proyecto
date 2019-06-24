@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Vendido.Views.ListaProductos">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="MistyRose">
+            <Label Text="Productos Vendidos" FontSize="40" HorizontalOptions="Center"/>
+            <ListView x:Name="lsvProductos" ItemSelected="LsvProductos_ItemSelected"
+                      RowHeight="50">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Nombre}"
+                                           TextColor="Gray" FontSize="15"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Precio}"
+                                               HorizontalOptions="StartAndExpand"
+                                               TextColor="LightGray" FontSize="12"/>
+                                        <Label Text="{Binding Cantidad}"
+                                               HorizontalOptions="EndAndExpand"
+                                               TextColor="LightGray" FontSize="12"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnNuevo" Text="Nuevo" Priority="0"
+                     Clicked="BtnNuevo_Clicked" Order="Primary" IconImageSource="agregar.png"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>
